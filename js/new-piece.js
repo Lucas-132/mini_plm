@@ -14,9 +14,13 @@ document.getElementById('new-piece-form').addEventListener('submit', function(e)
 
     const piece = {
         "name":name,
-        "description":description,
-        "version":1,
-        "date": dateDayMonthYear
+        "versions":[
+            {
+                "number":1,
+                "description":description,
+                "date": dateDayMonthYear
+            }
+        ]
     };
 
     pieces.push(piece);
