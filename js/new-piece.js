@@ -8,8 +8,9 @@ document.getElementById('new-piece-form').addEventListener('submit', function(e)
     let pieces = JSON.parse(stringPieces);
 
     let date = new Date();
-    let dateDayMonthYear = toString(date.getDate());
-    dateDayMonthYear += ":"+toString(date.getFullYear());
+    let dateDayMonthYear = date.getDay();
+    dateDayMonthYear += "/"+date.getMonth();
+    dateDayMonthYear += "/"+date.getFullYear();
 
     const piece = {
         "name":name,
