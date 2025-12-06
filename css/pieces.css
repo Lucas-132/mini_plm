@@ -1,0 +1,37 @@
+/* Conteneur d'affichage des pièces */
+#pieces-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Cartes de pièces */
+.piece-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.piece-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.piece-card h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.piece-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.piece-card a {
+    font-weight: 600;
+}

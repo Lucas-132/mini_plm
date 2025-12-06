@@ -5,9 +5,7 @@ let pieces = JSON.parse(stringPieces); // pieces list
 let piece = pieces[params.get("id")] // piece that should currently display
 
 // Display the piece's name :
-let pieceNameTitle = document.createElement("h1");
-pieceNameTitle.innerHTML = `${piece.name}`;
-document.getElementById('piece-infos').appendChild(pieceNameTitle);
+document.getElementById('piece-name').innerHTML = `${piece.name}`
 
 // Display a button to add a new version :
 let addVersionLinkButton = document.createElement('a');
@@ -23,6 +21,7 @@ piece.versions.forEach(version => {
         <p>Date of creation: ${version.date}</p>
         <h2>Description:</h2>
         <p>${version.description}</p>
+        <hr>
     `;
     document.getElementById('piece-infos').appendChild(versionDiv);
 });
