@@ -7,7 +7,8 @@
 }
 
 /* Cartes de pièces */
-.piece-card {
+.piece-card,
+#pieces-display > div {
     background: white;
     border-radius: 12px;
     padding: 1.5rem;
@@ -17,21 +18,25 @@
     overflow: hidden;
 }
 
-.piece-card:hover {
+.piece-card:hover,
+#pieces-display > div:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.piece-card h2 {
+.piece-card h2,
+#pieces-display > div h2 {
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
 }
 
-.piece-card p {
+.piece-card p,
+#pieces-display > div p {
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
 
-.piece-card a {
+.piece-card a,
+#pieces-display > div a {
     font-weight: 600;
 }
