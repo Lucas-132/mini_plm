@@ -1,3 +1,4 @@
+import { deletePiece } from './delete-piece.js'
 export function listPieces(){
     let stringPieces = localStorage.getItem("pieces");
     let pieces = JSON.parse(stringPieces);
@@ -9,6 +10,7 @@ export function listPieces(){
             <a href="piece.html?id=${index}">
             <button>View Piece</button>
             </a>
+            <button onclick='deletePiece(${index})'>Delete Piece</button>
         `
         
         document.getElementById('pieces-display').appendChild(pieceDiv);
