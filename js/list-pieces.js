@@ -10,9 +10,14 @@ export function listPieces(){
             <a href="piece.html?id=${index}">
             <button>View Piece</button>
             </a>
-            <button onclick='deletePiece(${index})'>Delete Piece</button>
+            <button class="delete-btn" data-index="${index}">Delete Piece</button>
         `
         
         document.getElementById('pieces-display').appendChild(pieceDiv);
+        
+        
+        pieceDiv.querySelector('.delete-btn').addEventListener('click', () => {
+            deletePiece(index);
+        });
     });
 }
