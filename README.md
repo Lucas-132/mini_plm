@@ -12,7 +12,7 @@ Here's what you can do with Simple PLM :
 - **List your pieces** : You are able to see all your existing pieces on the app's home page.
 
 ## Preview video
-https://github.com/user-attachments/assets/366b3af5-0201-4bfa-afa4-a12c3e3f3008
+https://github.com/user-attachments/assets/ceb775c9-2f0c-4461-a8f3-ad73da902fe2
 
 ## 🧠What I learned
 During the really short developement of this project, I learned what is a product lifetime manager and what are the basic expectations regarding this kind of app. On the technical side, I also learned in more deepness how Local Storage works, how to stock JSON datas using it and how to exploit these datas in my Javascript before sending it back to storage in string format.
